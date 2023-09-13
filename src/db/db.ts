@@ -6,13 +6,14 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const { SQL_PASSWORD, SQL_USER, SQL_HOST, DB } = process.env;
+const { SQL_PASSWORD, SQL_USER, SQL_HOST, DB, MYSQLPORT } = process.env;
 
 const mySqlConnectionsPool = mysql.createPool({
   host: SQL_HOST,
   user: SQL_USER,
   password: SQL_PASSWORD,
   database: DB,
+  port: Number(MYSQLPORT),
 });
 
 export const db = drizzle(mySqlConnectionsPool, { logger: true });
