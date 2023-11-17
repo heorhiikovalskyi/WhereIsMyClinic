@@ -139,9 +139,7 @@
       "compositePrimaryKeys": {
         "clinics_id": {
           "name": "clinics_id",
-          "columns": [
-            "id"
-          ]
+          "columns": ["id"]
         }
       },
       "uniqueConstraints": {}

@@ -1,10 +1,6 @@
-import { drizzle } from "drizzle-orm/mysql2";
-import mysql from "mysql2/promise";
-import "dotenv/config.js";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import { drizzle } from 'drizzle-orm/mysql2';
+import mysql from 'mysql2/promise';
+import 'dotenv/config.js';
 
 const { SQL_PASSWORD, SQL_USER, SQL_HOST, DB, MYSQLPORT } = process.env;
 

@@ -1,15 +1,15 @@
 export type Clinics = Partial<{
-  "Long Name Version": string;
-  "Typeform registration link": string;
+  'Long Name Version': string;
+  'Typeform registration link': string;
   PMS: string;
-  "Meta-title": string;
-  "Meta-description": string;
+  'Meta-title': string;
+  'Meta-description': string;
   slug: string;
   Website: string;
-  "Clinic Name": string;
+  'Clinic Name': string;
   Display_on_web: string;
-  "link to clinic suburb page": string;
-  "Full Address": string;
+  'link to clinic suburb page': string;
+  'Full Address': string;
   City: string;
   Suburb: string;
   State: string;
@@ -24,5 +24,5 @@ export type Clinics = Partial<{
   nearby3_link: string;
   nearby4_txt: string;
   nearby4_link: string;
-  "About Clinic": string;
+  'About Clinic': string;
 }>[];
